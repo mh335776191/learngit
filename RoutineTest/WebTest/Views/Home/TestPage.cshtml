@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "TestPage";
+}
+<h2>
+    TestPage</h2>
+<script src="http://common.cnblogs.com/script/jquery.js"></script>
+<script>
+    $(function () {
+        $("#mainifr").load(function () {
+            var frameObj = document.getElementById("mainifr");
+            var frameContent = frameObj.contentWindow.document.body.innerHTML;
+        });
+    })
+</script>
+<iframe src="http://www.baidu.com" id="mainifr"></iframe>

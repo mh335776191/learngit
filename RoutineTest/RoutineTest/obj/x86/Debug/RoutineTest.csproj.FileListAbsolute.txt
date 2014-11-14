@@ -1,0 +1,8 @@
+d:\documents\visual studio 2010\Projects\RoutineTest\RoutineTest\obj\x86\Debug\ResolveAssemblyReference.cache
+d:\documents\visual studio 2010\Projects\RoutineTest\RoutineTest\bin\Debug\RoutineTest.exe
+d:\documents\visual studio 2010\Projects\RoutineTest\RoutineTest\bin\Debug\RoutineTest.pdb
+d:\documents\visual studio 2010\Projects\RoutineTest\RoutineTest\bin\Debug\TXOrm.dll
+d:\documents\visual studio 2010\Projects\RoutineTest\RoutineTest\bin\Debug\TXOrm.pdb
+d:\documents\visual studio 2010\Projects\RoutineTest\RoutineTest\obj\x86\Debug\RoutineTest.exe
+d:\documents\visual studio 2010\Projects\RoutineTest\RoutineTest\obj\x86\Debug\RoutineTest.pdb
+d:\documents\visual studio 2010\Projects\RoutineTest\RoutineTest\bin\Debug\RoutineTest.exe.config
