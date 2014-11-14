@@ -7,3 +7,10 @@ D:\Documents\Visual Studio 2010\Projects\RoutineTest\WindowsFormsTest\obj\x86\De
 D:\Documents\Visual Studio 2010\Projects\RoutineTest\WindowsFormsTest\obj\x86\Debug\WindowsFormsTest.exe
 D:\Documents\Visual Studio 2010\Projects\RoutineTest\WindowsFormsTest\obj\x86\Debug\WindowsFormsTest.pdb
 D:\Documents\Visual Studio 2010\Projects\RoutineTest\WindowsFormsTest\obj\x86\Debug\WindowsFormsTest.Form1.resources
+D:\gitui\learngit\RoutineTest\WindowsFormsTest\bin\Debug\WindowsFormsTest.exe
+D:\gitui\learngit\RoutineTest\WindowsFormsTest\bin\Debug\WindowsFormsTest.pdb
+D:\gitui\learngit\RoutineTest\WindowsFormsTest\obj\x86\Debug\WindowsFormsTest.Form1.resources
+D:\gitui\learngit\RoutineTest\WindowsFormsTest\obj\x86\Debug\WindowsFormsTest.Properties.Resources.resources
+D:\gitui\learngit\RoutineTest\WindowsFormsTest\obj\x86\Debug\WindowsFormsTest.csproj.GenerateResource.Cache
+D:\gitui\learngit\RoutineTest\WindowsFormsTest\obj\x86\Debug\WindowsFormsTest.exe
+D:\gitui\learngit\RoutineTest\WindowsFormsTest\obj\x86\Debug\WindowsFormsTest.pdb

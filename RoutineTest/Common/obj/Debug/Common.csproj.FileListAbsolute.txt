@@ -3,3 +3,7 @@ D:\Documents\Visual Studio 2010\Projects\RoutineTest\Common\bin\Debug\Common.pdb
 D:\Documents\Visual Studio 2010\Projects\RoutineTest\Common\obj\Debug\ResolveAssemblyReference.cache
 D:\Documents\Visual Studio 2010\Projects\RoutineTest\Common\obj\Debug\Common.dll
 D:\Documents\Visual Studio 2010\Projects\RoutineTest\Common\obj\Debug\Common.pdb
+D:\gitui\learngit\RoutineTest\Common\bin\Debug\Common.dll
+D:\gitui\learngit\RoutineTest\Common\bin\Debug\Common.pdb
+D:\gitui\learngit\RoutineTest\Common\obj\Debug\Common.dll
+D:\gitui\learngit\RoutineTest\Common\obj\Debug\Common.pdb

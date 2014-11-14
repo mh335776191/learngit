@@ -4,13 +4,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+
 
 namespace WpfTest
 {
@@ -23,11 +17,11 @@ namespace WpfTest
         {
             InitializeComponent();
         }
-        public static void DrawingTest(Graphics graph)
+
+        private void button1_Click(object sender, RoutedEventArgs e)
         {
-            Pen pen = new Pen(Color.Red, 20);
-            graph.DrawLine(pen, 10, 10, 50, 50);
-            Console.Write(graph);
+            button1.Content = "点击事件";
+           
         }
     }
 }

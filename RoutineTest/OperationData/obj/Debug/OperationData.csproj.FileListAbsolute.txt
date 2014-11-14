@@ -1,0 +1,4 @@
+D:\gitui\learngit\RoutineTest\OperationData\bin\Debug\OperationData.dll
+D:\gitui\learngit\RoutineTest\OperationData\bin\Debug\OperationData.pdb
+D:\gitui\learngit\RoutineTest\OperationData\obj\Debug\OperationData.dll
+D:\gitui\learngit\RoutineTest\OperationData\obj\Debug\OperationData.pdb

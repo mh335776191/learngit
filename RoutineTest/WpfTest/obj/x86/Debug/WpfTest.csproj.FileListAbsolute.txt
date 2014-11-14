@@ -1,0 +1,11 @@
+D:\gitui\learngit\RoutineTest\WpfTest\obj\x86\Debug\MainWindow.baml
+D:\gitui\learngit\RoutineTest\WpfTest\obj\x86\Debug\MainWindow.g.cs
+D:\gitui\learngit\RoutineTest\WpfTest\obj\x86\Debug\App.g.cs
+D:\gitui\learngit\RoutineTest\WpfTest\obj\x86\Debug\WpfTest_MarkupCompile.cache
+D:\gitui\learngit\RoutineTest\WpfTest\obj\x86\Debug\WpfTest.g.resources
+D:\gitui\learngit\RoutineTest\WpfTest\obj\x86\Debug\WpfTest.Properties.Resources.resources
+D:\gitui\learngit\RoutineTest\WpfTest\obj\x86\Debug\WpfTest.csproj.GenerateResource.Cache
+D:\gitui\learngit\RoutineTest\WpfTest\bin\Debug\WpfTest.exe
+D:\gitui\learngit\RoutineTest\WpfTest\bin\Debug\WpfTest.pdb
+D:\gitui\learngit\RoutineTest\WpfTest\obj\x86\Debug\WpfTest.exe
+D:\gitui\learngit\RoutineTest\WpfTest\obj\x86\Debug\WpfTest.pdb

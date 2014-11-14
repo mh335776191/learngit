@@ -5,3 +5,10 @@ D:\Documents\Visual Studio 2010\Projects\RoutineTest\WebTest\bin\EntityFramework
 D:\Documents\Visual Studio 2010\Projects\RoutineTest\WebTest\obj\Debug\ResolveAssemblyReference.cache
 D:\Documents\Visual Studio 2010\Projects\RoutineTest\WebTest\obj\Debug\WebTest.dll
 D:\Documents\Visual Studio 2010\Projects\RoutineTest\WebTest\obj\Debug\WebTest.pdb
+D:\gitui\learngit\RoutineTest\WebTest\bin\WebTest.dll
+D:\gitui\learngit\RoutineTest\WebTest\bin\WebTest.pdb
+D:\gitui\learngit\RoutineTest\WebTest\bin\EntityFramework.dll
+D:\gitui\learngit\RoutineTest\WebTest\bin\EntityFramework.xml
+D:\gitui\learngit\RoutineTest\WebTest\obj\Debug\WebTest.csprojResolveAssemblyReference.cache
+D:\gitui\learngit\RoutineTest\WebTest\obj\Debug\WebTest.dll
+D:\gitui\learngit\RoutineTest\WebTest\obj\Debug\WebTest.pdb

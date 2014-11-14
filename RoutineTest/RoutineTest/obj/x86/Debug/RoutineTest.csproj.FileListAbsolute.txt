@@ -6,3 +6,11 @@ d:\documents\visual studio 2010\Projects\RoutineTest\RoutineTest\bin\Debug\TXOrm
 d:\documents\visual studio 2010\Projects\RoutineTest\RoutineTest\obj\x86\Debug\RoutineTest.exe
 d:\documents\visual studio 2010\Projects\RoutineTest\RoutineTest\obj\x86\Debug\RoutineTest.pdb
 d:\documents\visual studio 2010\Projects\RoutineTest\RoutineTest\bin\Debug\RoutineTest.exe.config
+D:\gitui\learngit\RoutineTest\RoutineTest\bin\Debug\RoutineTest.exe.config
+D:\gitui\learngit\RoutineTest\RoutineTest\obj\x86\Debug\RoutineTest.exe
+D:\gitui\learngit\RoutineTest\RoutineTest\obj\x86\Debug\RoutineTest.pdb
+D:\gitui\learngit\RoutineTest\RoutineTest\bin\Debug\RoutineTest.exe
+D:\gitui\learngit\RoutineTest\RoutineTest\bin\Debug\RoutineTest.pdb
+D:\gitui\learngit\RoutineTest\RoutineTest\bin\Debug\TXOrm.dll
+D:\gitui\learngit\RoutineTest\RoutineTest\bin\Debug\TXOrm.pdb
+D:\gitui\learngit\RoutineTest\RoutineTest\obj\x86\Debug\RoutineTest.csprojResolveAssemblyReference.cache
