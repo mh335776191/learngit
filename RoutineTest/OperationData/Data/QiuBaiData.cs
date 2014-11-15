@@ -21,7 +21,7 @@ namespace OperationData.Data
 
         public QiuBaiData()
         {
-            HasDataId = LoadDbFormID();
+            //HasDataId = LoadDbFormID();
         }
 
         public override void GetWebData()

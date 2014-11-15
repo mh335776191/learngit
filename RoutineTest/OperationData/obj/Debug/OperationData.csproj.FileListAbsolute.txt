@@ -2,3 +2,7 @@ D:\gitui\learngit\RoutineTest\OperationData\bin\Debug\OperationData.dll
 D:\gitui\learngit\RoutineTest\OperationData\bin\Debug\OperationData.pdb
 D:\gitui\learngit\RoutineTest\OperationData\obj\Debug\OperationData.dll
 D:\gitui\learngit\RoutineTest\OperationData\obj\Debug\OperationData.pdb
+F:\GitProject\QiuProject\learngit\RoutineTest\OperationData\bin\Debug\OperationData.dll
+F:\GitProject\QiuProject\learngit\RoutineTest\OperationData\bin\Debug\OperationData.pdb
+F:\GitProject\QiuProject\learngit\RoutineTest\OperationData\obj\Debug\OperationData.dll
+F:\GitProject\QiuProject\learngit\RoutineTest\OperationData\obj\Debug\OperationData.pdb
