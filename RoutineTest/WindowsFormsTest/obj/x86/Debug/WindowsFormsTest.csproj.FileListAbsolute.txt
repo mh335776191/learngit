@@ -14,3 +14,10 @@ D:\gitui\learngit\RoutineTest\WindowsFormsTest\obj\x86\Debug\WindowsFormsTest.Pr
 D:\gitui\learngit\RoutineTest\WindowsFormsTest\obj\x86\Debug\WindowsFormsTest.csproj.GenerateResource.Cache
 D:\gitui\learngit\RoutineTest\WindowsFormsTest\obj\x86\Debug\WindowsFormsTest.exe
 D:\gitui\learngit\RoutineTest\WindowsFormsTest\obj\x86\Debug\WindowsFormsTest.pdb
+F:\GitProject\QiuProject\learngit\RoutineTest\WindowsFormsTest\bin\Debug\WindowsFormsTest.exe
+F:\GitProject\QiuProject\learngit\RoutineTest\WindowsFormsTest\bin\Debug\WindowsFormsTest.pdb
+F:\GitProject\QiuProject\learngit\RoutineTest\WindowsFormsTest\obj\x86\Debug\WindowsFormsTest.Form1.resources
+F:\GitProject\QiuProject\learngit\RoutineTest\WindowsFormsTest\obj\x86\Debug\WindowsFormsTest.Properties.Resources.resources
+F:\GitProject\QiuProject\learngit\RoutineTest\WindowsFormsTest\obj\x86\Debug\WindowsFormsTest.csproj.GenerateResource.Cache
+F:\GitProject\QiuProject\learngit\RoutineTest\WindowsFormsTest\obj\x86\Debug\WindowsFormsTest.exe
+F:\GitProject\QiuProject\learngit\RoutineTest\WindowsFormsTest\obj\x86\Debug\WindowsFormsTest.pdb

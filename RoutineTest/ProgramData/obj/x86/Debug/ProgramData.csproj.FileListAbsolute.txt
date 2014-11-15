@@ -6,3 +6,11 @@ D:\gitui\learngit\RoutineTest\ProgramData\obj\x86\Debug\ProgramData.csprojResolv
 D:\gitui\learngit\RoutineTest\ProgramData\obj\x86\Debug\ProgramData.exe
 D:\gitui\learngit\RoutineTest\ProgramData\obj\x86\Debug\ProgramData.pdb
 D:\gitui\learngit\RoutineTest\ProgramData\bin\Debug\ProgramData.exe.config
+F:\GitProject\QiuProject\learngit\RoutineTest\ProgramData\bin\Debug\ProgramData.exe.config
+F:\GitProject\QiuProject\learngit\RoutineTest\ProgramData\obj\x86\Debug\ProgramData.exe
+F:\GitProject\QiuProject\learngit\RoutineTest\ProgramData\obj\x86\Debug\ProgramData.pdb
+F:\GitProject\QiuProject\learngit\RoutineTest\ProgramData\bin\Debug\ProgramData.exe
+F:\GitProject\QiuProject\learngit\RoutineTest\ProgramData\bin\Debug\ProgramData.pdb
+F:\GitProject\QiuProject\learngit\RoutineTest\ProgramData\bin\Debug\OperationData.dll
+F:\GitProject\QiuProject\learngit\RoutineTest\ProgramData\bin\Debug\OperationData.pdb
+F:\GitProject\QiuProject\learngit\RoutineTest\ProgramData\obj\x86\Debug\ProgramData.csprojResolveAssemblyReference.cache
