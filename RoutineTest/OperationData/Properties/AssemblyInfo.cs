@@ -34,3 +34,7 @@ using System.Runtime.InteropServices;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
+//#pragma warning disable 612,618
+//[assembly: log4net.Config.XmlConfigurator(Watch = true)]
+[assembly: log4net.Config.DOMConfigurator(ConfigFile = "log4net.config", Watch = true)]
+//#pragma warning restore 612,618

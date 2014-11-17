@@ -1,0 +1,11 @@
+D:\gitui\learngit\RoutineTest\AddTaskScheuler\bin\Debug\log4net.config
+D:\gitui\learngit\RoutineTest\AddTaskScheuler\bin\Debug\AddTaskScheuler.exe.config
+D:\gitui\learngit\RoutineTest\AddTaskScheuler\bin\Debug\AddTaskScheuler.exe
+D:\gitui\learngit\RoutineTest\AddTaskScheuler\bin\Debug\AddTaskScheuler.pdb
+D:\gitui\learngit\RoutineTest\AddTaskScheuler\bin\Debug\OperationData.dll
+D:\gitui\learngit\RoutineTest\AddTaskScheuler\bin\Debug\log4net.dll
+D:\gitui\learngit\RoutineTest\AddTaskScheuler\bin\Debug\OperationData.pdb
+D:\gitui\learngit\RoutineTest\AddTaskScheuler\bin\Debug\log4net.xml
+D:\gitui\learngit\RoutineTest\AddTaskScheuler\obj\x86\Debug\AddTaskScheuler.csprojResolveAssemblyReference.cache
+D:\gitui\learngit\RoutineTest\AddTaskScheuler\obj\x86\Debug\AddTaskScheuler.exe
+D:\gitui\learngit\RoutineTest\AddTaskScheuler\obj\x86\Debug\AddTaskScheuler.pdb

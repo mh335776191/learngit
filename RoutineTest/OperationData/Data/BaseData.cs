@@ -19,13 +19,7 @@ namespace OperationData
         /// <param name="html"></param>
         /// <returns></returns>
         public abstract List<IInfoModel> ProcessHtml(string html);
-        /// <summary>
-        /// 插入数据库
-        /// </summary>
-        /// <param name="modellist"></param>
-        public abstract void InsertData(List<IInfoModel> modellist);
-
-        public abstract List<int> LoadDbFormID();
+      
         public void ExecuteAddEvent(string msg)
         {
             if (AddEvent != null)

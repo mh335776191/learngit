@@ -1,0 +1,12 @@
+D:\gitui\learngit\RoutineTest\JokeWeb\bin\log4net.config
+D:\gitui\learngit\RoutineTest\JokeWeb\bin\JokeWeb.dll
+D:\gitui\learngit\RoutineTest\JokeWeb\bin\JokeWeb.pdb
+D:\gitui\learngit\RoutineTest\JokeWeb\bin\EntityFramework.dll
+D:\gitui\learngit\RoutineTest\JokeWeb\bin\OperationData.dll
+D:\gitui\learngit\RoutineTest\JokeWeb\bin\log4net.dll
+D:\gitui\learngit\RoutineTest\JokeWeb\bin\OperationData.pdb
+D:\gitui\learngit\RoutineTest\JokeWeb\bin\EntityFramework.xml
+D:\gitui\learngit\RoutineTest\JokeWeb\bin\log4net.xml
+D:\gitui\learngit\RoutineTest\JokeWeb\obj\Debug\JokeWeb.csprojResolveAssemblyReference.cache
+D:\gitui\learngit\RoutineTest\JokeWeb\obj\Debug\JokeWeb.dll
+D:\gitui\learngit\RoutineTest\JokeWeb\obj\Debug\JokeWeb.pdb

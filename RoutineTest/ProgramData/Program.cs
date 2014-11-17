@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using OperationData;
 using OperationData.Data;
+
 
 namespace ProgramData
 {
@@ -15,5 +17,8 @@ namespace ProgramData
             qiubai.AddEvent += (m) => { Console.WriteLine(m); };
             qiubai.GetWebData();
         }
+
     }
+
+ 
 }

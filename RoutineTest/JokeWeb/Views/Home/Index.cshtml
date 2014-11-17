@@ -1,0 +1,110 @@
+﻿@{
+    ViewBag.Title = "笑屎了";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model List<OperationData.Model.DisPlayModel>
+<div id="plist">
+    @if (Model != null)
+    {
+        foreach (var item in Model)
+        {
+        <div class="pdiv">
+            <img  src="@(string.IsNullOrWhiteSpace(item.ImgPath) ? "" : item.ImgPath)"/>
+            <div class="content_text">@item.Content</div>
+        </div>
+        }
+    }
+</div>
+<div style="text-align: center;" id="pageloding">
+    正在加载</div>
+<script>
+    var pindex = 2;
+    var islast = false;
+    var $container = $('#plist');
+    $(function () {//瀑布流分页
+        $(window).bind("scroll", function () {
+            // 判断窗口的滚动条是否接近页面底部
+            if ($(document).scrollTop() + $(window).height() > $(document).height() - 10) {
+                // 判断下一页链接是否为空
+                if (!islast) {//不是最后一页翻页
+                    if (pindex > 1 && $("#pageloding").is(":hidden")) {
+                        //第一页要加载完毕,上页加载完毕
+                        $("#pageloding").show("fast");
+                        // Ajax 翻页
+                        $.ajax({
+                            url: "/home/_list",
+                            data: { index: pindex },
+                            type: "POST",
+                            success: function (data) {
+
+                                ShowResult(data);
+
+                                pindex++;
+                            },
+                            complete: function () {
+
+                            }
+                        });
+                    }
+                } else {
+                    $("#pageloding").html("木有了噢，最后一页了！");
+                    $("#pageloding").show("fast");
+                }
+            }
+        });
+    });
+    function ShowResult(data) {
+        if (data == "-1") {
+            islast = true;
+            $("#pageloding").html("木有了噢，最后一页了！");
+            $("#pageloding").show("fast");
+            return;
+        }
+        var listhtml = "";
+        for (var i = 0; i < data.length; i++) {
+            listhtml += '<div class="pdiv"><img src="' + (data[i].ImgPath == "" ? "" : data[i].ImgPath) + '" /> <div class="content_text">' + data[i].Content + ' </div></div>';
+        }
+        var reg = /\r|\n/g;
+        listhtml = listhtml.replace(reg, "");
+        var $newElems = $(listhtml);
+        $container.append($newElems);
+        //$newElems.imagesLoaded(function () {
+        //            $container.masonry('appended', $newElems);//图片有叠加
+        //渐显新的内容
+        $newElems.animate({ opacity: 1 });
+        // 隐藏正在加载模块
+        $("#pageloding").hide("slow");
+
+    }
+</script>
+<style>
+    #pageloding
+    {
+        display: none;
+    }
+    .plist
+    {
+        float: left;
+    }
+    .pdiv
+    {
+        display: inline;
+        padding: 10px;
+        float: left;
+        padding: 10px;
+        position: relative;
+        border: 1px solid blue;
+        max-width: 200px;
+    }
+    .content_text
+    {
+        width: 200px;
+        position: inherit;
+        height: 300px;
+        display: inline;
+    }
+    .pdiv img
+    {
+        width: 200px;
+    }
+</style>
