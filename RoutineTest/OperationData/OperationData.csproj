@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\..\Documents\Downloads\log4net-1.2.13-bin-newkey\log4net-1.2.13\bin\net\4.0\release\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -41,14 +44,34 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\HttpHelper.cs" />
+    <Compile Include="Common\LogHelper.cs" />
     <Compile Include="Common\SQLHelper.cs" />
+    <Compile Include="Common\TaskScheulerHelper.cs" />
+    <Compile Include="DAL\IDAL.cs" />
+    <Compile Include="DAL\QiuBaiDal.cs" />
     <Compile Include="Data\BaseData.cs" />
     <Compile Include="Data\QiuBaiData.cs" />
+    <Compile Include="Model\DisPlayModel.cs" />
     <Compile Include="Model\IInfoModel.cs" />
     <Compile Include="Model\QiuBaiInfoModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <COMReference Include="TaskScheduler">
+      <Guid>{E34CB9F1-C7F7-424C-BE29-027DCC09363A}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="log4net.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
