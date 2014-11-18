@@ -11,6 +11,7 @@ namespace OperationData.Model
         public string Content { get; set; }
         public string Tag { get; set; }
         public string ImgPath { get; set; }
+        public int FormId { get; set; }
         public DateTime PublishDate { get; set; }
     }
 }

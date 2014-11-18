@@ -14,15 +14,18 @@ namespace OperationData.DAL
         {
             _constr = System.Configuration.ConfigurationSettings.AppSettings["JokeDb"];
         }
-        public List<int> LoadDbFormID()
+        public List<RepeatModel> LoadDbFormID()
         {
-            List<int> list = new List<int>();
-            string sql = @"SELECT  FormId
+            List<RepeatModel> list = new List<RepeatModel>();
+            string sql = @"SELECT FormId,LEFT(Content,50)
                             FROM    dbo.JokeDetail WHERE DATEDIFF(DAY,PublishDate,GETDATE())<10";
             var read = SqlHelper.ExecuteReader(_constr, System.Data.CommandType.Text, sql);
             while (read.Read())
             {
-                list.Add(int.Parse(read[0].ToString()));
+                RepeatModel model = new RepeatModel();
+                model.FromId = Convert.ToInt32(read[0]);
+                model.Content = read[1].ToString();
+                list.Add(model);
             }
             read.Dispose();
             return list;
@@ -41,16 +44,16 @@ namespace OperationData.DAL
                                                   PublishDate ,
                                                   Content ,
                                                   ImgUrl ,
-                                                  Tag 
+                                                  Tag ,GoodNum,ReplyNum
                                                 )
                                         VALUES  ( {0} , -- FormId - int
                                                   '{1}' , -- Author - nvarchar(30)
                                                   '{2}' , -- PublishDate - datetime
                                                   '{3}' , -- Content - nvarchar(max)
                                                   '{4}' , -- ImgUrl - varchar(500)
-                                                  '{5}'  -- Tag - varchar(10)          
-                                                )", qiubaimodel.FormId, qiubaimodel.Author, qiubaimodel.PublishDate,
-                                    qiubaimodel.Content, qiubaimodel.ImgUrl, qiubaimodel.Tag);
+                                                  '{5}',  -- Tag - varchar(10)          
+                                               {6},{7} )", qiubaimodel.FormId, qiubaimodel.Author, qiubaimodel.PublishDate,
+                                    qiubaimodel.Content, qiubaimodel.ImgUrl, qiubaimodel.Tag, qiubaimodel.GoodNum, qiubaimodel.ReplyNum);
                 }
             }
             string sql = sb.ToString();
@@ -65,8 +68,8 @@ namespace OperationData.DAL
         {
             List<DisPlayModel> list = new List<DisPlayModel>();
             string sql = string.Format(@"SELECT  *
-                                        FROM    ( SELECT    ROW_NUMBER() OVER ( ORDER BY PublishDate DESC ) RowID ,
-                                                            Id ,
+                                        FROM    ( SELECT    ROW_NUMBER() OVER ( ORDER BY cast((convert(varchar,CreateDate,112)) as int) DESC, cast((convert(varchar,PublishDate,112)) as int) DESC, goodnum DESC ) RowID,
+                                                            Id ,FormId,
                                                             Content ,
                                                             ImgUrl ,
                                                             Tag ,
@@ -79,6 +82,7 @@ namespace OperationData.DAL
             {
                 DisPlayModel model = new DisPlayModel();
                 model.Id = Convert.ToInt32(reader["Id"]);
+                model.FormId = Convert.ToInt32(reader["FormId"]);
                 model.Content = reader["Content"].ToString();
                 model.ImgPath = reader["ImgUrl"].ToString();
                 model.Tag = reader["Tag"].ToString();

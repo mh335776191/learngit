@@ -13,12 +13,13 @@ namespace OperationData
         /// 数据入口
         /// </summary>
         public abstract void GetWebData();
+
         /// <summary>
         /// 处理html 转换为实体
         /// </summary>
         /// <param name="html"></param>
         /// <returns></returns>
-        public abstract List<IInfoModel> ProcessHtml(string html);
+        public abstract List<IInfoModel> ProcessHtml(string html,string pagetag);
       
         public void ExecuteAddEvent(string msg)
         {
