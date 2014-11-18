@@ -54,6 +54,7 @@
     <Compile Include="Model\DisPlayModel.cs" />
     <Compile Include="Model\IInfoModel.cs" />
     <Compile Include="Model\QiuBaiInfoModel.cs" />
+    <Compile Include="Model\RepeatModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

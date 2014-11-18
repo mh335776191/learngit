@@ -14,5 +14,7 @@ namespace OperationData.Model
         public string ImgUrl { get; set; }
         public DateTime PublishDate { get; set; }
         public string Tag { get; set; }
+        public int GoodNum { get; set; }
+        public int ReplyNum { get; set; }
     }
 }

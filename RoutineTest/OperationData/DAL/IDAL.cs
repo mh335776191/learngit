@@ -8,7 +8,7 @@ namespace OperationData.DAL
 {
     public interface IDAL
     {
-        List<int> LoadDbFormID();
+        List<RepeatModel> LoadDbFormID();
         void InsertData(List<IInfoModel> model);
         List<DisPlayModel> GetDisPlayList(int index, int pagesize);
     }

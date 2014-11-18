@@ -21,3 +21,4 @@ F:\GitProject\QiuProject\learngit\RoutineTest\WindowsFormsTest\obj\x86\Debug\Win
 F:\GitProject\QiuProject\learngit\RoutineTest\WindowsFormsTest\obj\x86\Debug\WindowsFormsTest.csproj.GenerateResource.Cache
 F:\GitProject\QiuProject\learngit\RoutineTest\WindowsFormsTest\obj\x86\Debug\WindowsFormsTest.exe
 F:\GitProject\QiuProject\learngit\RoutineTest\WindowsFormsTest\obj\x86\Debug\WindowsFormsTest.pdb
+D:\gitui\learngit\RoutineTest\WindowsFormsTest\obj\x86\Debug\WindowsFormsTest.csprojResolveAssemblyReference.cache

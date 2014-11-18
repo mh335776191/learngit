@@ -18,7 +18,6 @@ namespace RoutineTest
         static void Main()
         {
             staticclass.Print();
-            staticclass.Print();
             Console.ReadKey();
         }
 
@@ -103,6 +102,7 @@ namespace RoutineTest
 
     internal class staticclass
     {
+        private static int i = 0;
         static staticclass()
         {
             Console.WriteLine("静态类");
@@ -110,7 +110,8 @@ namespace RoutineTest
 
         public static void Print()
         {
-            Console.WriteLine("静态方法");
+            i++;
+            Console.WriteLine(i);
         }
     }
 }

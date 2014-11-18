@@ -60,7 +60,7 @@ namespace OperationData.Common
             taskDefinition.Settings.RunOnlyIfIdle = false;
 
             var tt = (ITimeTrigger)taskDefinition.Triggers.Create(_TASK_TRIGGER_TYPE2.TASK_TRIGGER_TIME);
-            tt.Repetition.Interval = "PT30M";//执行频率
+            tt.Repetition.Interval = "PT59M";//执行频率
             tt.StartBoundary = DateTime.Now.ToString("yyyy-MM-ddTHH:mm:ss"); //开始执行时间
 
             ITaskFolder rootFolder = taskService.GetFolder(@"\");//’6′ as argument means this task can be created or updated ["CreateOrUpdate" flag]
