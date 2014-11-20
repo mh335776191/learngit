@@ -15,7 +15,7 @@ namespace JokeWeb.Controllers
         {
             //var list = Dal.GetDisPlayList(!index.HasValue ? 1 : index.Value, PAGESIZE);
             //return View(list);
-            return View("");
+            return View();
         }
 
         public JsonResult _list(int index)
