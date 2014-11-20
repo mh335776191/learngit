@@ -15,8 +15,6 @@ namespace AddTaskScheuler
             TaskScheulerHelper.CreateTask("抓取数据服务", filepath);
             LogHelper.WriteLog("服务信息");
             LogHelper.WriteLog("异常", new Exception("擦破，报错了！"));
-            
-            
         }
     }
 }
