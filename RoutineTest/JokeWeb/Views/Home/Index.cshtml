@@ -70,9 +70,9 @@
         //                $container.append($newElems);
         //                $newElems.animate({ opacity: 1 });
 
-        var $newElems = $(listhtml).css({ opacity: 0 }).appendTo($container);
+        var $newElems = $(listhtml).css({ opacity: 1 }).appendTo($container);
         $newElems.imagesLoaded(function () {
-            $newElems.animate({ opacity: 0 });
+            $newElems.animate({ opacity: 1 });
             $container.masonry('appended', $newElems, true);
         });
         // 隐藏正在加载模块
