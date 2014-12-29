@@ -11,3 +11,4 @@ F:\GitProject\QiuProject\learngit\RoutineTest\Common\bin\Debug\Common.dll
 F:\GitProject\QiuProject\learngit\RoutineTest\Common\bin\Debug\Common.pdb
 F:\GitProject\QiuProject\learngit\RoutineTest\Common\obj\Debug\Common.dll
 F:\GitProject\QiuProject\learngit\RoutineTest\Common\obj\Debug\Common.pdb
+D:\gitui\learngit\RoutineTest\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache

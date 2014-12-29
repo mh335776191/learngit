@@ -17,10 +17,20 @@ namespace RoutineTest
         private static System.Timers.Timer timer = new System.Timers.Timer();
         static void Main()
         {
-            staticclass.Print();
+            Itest tt = new testtruct();
+
+            Console.WriteLine(tt.GetType());
+            Console.Write(foo(20, 13));
             Console.ReadKey();
         }
-
+        static int foo(int x, int y)
+        {
+            if (x <= 0 || y <= 0)
+                return 1;
+            int c = foo(x - 6, y / 2);
+            int i = 3 * c;
+            return i;
+        }
         public static string test(string Url)
         {
             try
@@ -82,6 +92,7 @@ namespace RoutineTest
 
     public sealed class testsealed
     {
+
     }
 
     internal class test
@@ -91,13 +102,22 @@ namespace RoutineTest
         }
     }
 
+    internal abstract class abstracttest
+    {
+        public abstract void testme();
+    }
+
     internal interface Itest
     {
         void testme();
     }
 
-    internal struct testtruct
+    internal struct testtruct : Itest
     {
+        public void testme()
+        {
+            throw new NotImplementedException();
+        }
     }
 
     internal class staticclass
