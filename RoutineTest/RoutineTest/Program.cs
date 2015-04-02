@@ -8,7 +8,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Timers;
 using System.Xml;
-using TXOrm;
+
 using System.Drawing;
 namespace RoutineTest
 {
@@ -18,11 +18,27 @@ namespace RoutineTest
         static void Main()
         {
             Itest tt = new testtruct();
-
-            Console.WriteLine(tt.GetType());
-            Console.Write(foo(20, 13));
+            Console.Write(Program.ddd().i);
+            //Console.WriteLine(tt.GetType());
+            //Console.Write(foo(20, 13));
             Console.ReadKey();
         }
+
+        private static testsealed ddd()
+        {
+            testsealed t = new testsealed();
+            try
+            {
+                ++t.i;
+                return t;
+            }
+            finally
+            {
+                ++t.i;
+            }
+
+        }
+
         static int foo(int x, int y)
         {
             if (x <= 0 || y <= 0)
@@ -80,19 +96,11 @@ namespace RoutineTest
             Console.WriteLine(DateTime.Now);
         }
 
-        private static void GetDeveloper(int? id)
-        {
-            using (var db = new kyj_NewHouseDBEntities())
-            {
-                var deve = db.Premises.First();
-                Console.WriteLine(deve.Id);
-            }
-        }
     }
 
     public sealed class testsealed
     {
-
+        public int i = 1;
     }
 
     internal class test

@@ -23,8 +23,9 @@ namespace OperationData
       
         public void ExecuteAddEvent(string msg)
         {
-            if (AddEvent != null)
-                AddEvent(msg);
+            var tmpevent = AddEvent;
+            if (tmpevent != null)
+                tmpevent(msg);
         }
     }
 }
