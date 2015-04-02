@@ -1,46 +1,5 @@
-<<<<<<< HEAD
-d:\documents\visual studio 2010\Projects\RoutineTest\RoutineTest\obj\x86\Debug\ResolveAssemblyReference.cache
-d:\documents\visual studio 2010\Projects\RoutineTest\RoutineTest\bin\Debug\RoutineTest.exe
-d:\documents\visual studio 2010\Projects\RoutineTest\RoutineTest\bin\Debug\RoutineTest.pdb
-d:\documents\visual studio 2010\Projects\RoutineTest\RoutineTest\bin\Debug\TXOrm.dll
-d:\documents\visual studio 2010\Projects\RoutineTest\RoutineTest\bin\Debug\TXOrm.pdb
-d:\documents\visual studio 2010\Projects\RoutineTest\RoutineTest\obj\x86\Debug\RoutineTest.exe
-d:\documents\visual studio 2010\Projects\RoutineTest\RoutineTest\obj\x86\Debug\RoutineTest.pdb
-d:\documents\visual studio 2010\Projects\RoutineTest\RoutineTest\bin\Debug\RoutineTest.exe.config
 D:\gitui\learngit\RoutineTest\RoutineTest\bin\Debug\RoutineTest.exe.config
-D:\gitui\learngit\RoutineTest\RoutineTest\obj\x86\Debug\RoutineTest.exe
-D:\gitui\learngit\RoutineTest\RoutineTest\obj\x86\Debug\RoutineTest.pdb
 D:\gitui\learngit\RoutineTest\RoutineTest\bin\Debug\RoutineTest.exe
 D:\gitui\learngit\RoutineTest\RoutineTest\bin\Debug\RoutineTest.pdb
-F:\GitProject\QiuProject\learngit\RoutineTest\RoutineTest\bin\Debug\RoutineTest.exe.config
-F:\GitProject\QiuProject\learngit\RoutineTest\RoutineTest\bin\Debug\RoutineTest.exe
-F:\GitProject\QiuProject\learngit\RoutineTest\RoutineTest\bin\Debug\RoutineTest.pdb
-F:\GitProject\QiuProject\learngit\RoutineTest\RoutineTest\bin\Debug\TXOrm.pdb
-F:\GitProject\QiuProject\learngit\RoutineTest\RoutineTest\obj\x86\Debug\RoutineTest.csprojResolveAssemblyReference.cache
-F:\GitProject\QiuProject\learngit\RoutineTest\RoutineTest\obj\x86\Debug\RoutineTest.exe
-F:\GitProject\QiuProject\learngit\RoutineTest\RoutineTest\obj\x86\Debug\RoutineTest.pdb
-D:\gitui\learngit\RoutineTest\RoutineTest\obj\x86\Debug\RoutineTest.csprojResolveAssemblyReference.cache
-=======
-d:\documents\visual studio 2010\Projects\RoutineTest\RoutineTest\obj\x86\Debug\ResolveAssemblyReference.cache
-d:\documents\visual studio 2010\Projects\RoutineTest\RoutineTest\bin\Debug\RoutineTest.exe
-d:\documents\visual studio 2010\Projects\RoutineTest\RoutineTest\bin\Debug\RoutineTest.pdb
-d:\documents\visual studio 2010\Projects\RoutineTest\RoutineTest\bin\Debug\TXOrm.dll
-d:\documents\visual studio 2010\Projects\RoutineTest\RoutineTest\bin\Debug\TXOrm.pdb
-d:\documents\visual studio 2010\Projects\RoutineTest\RoutineTest\obj\x86\Debug\RoutineTest.exe
-d:\documents\visual studio 2010\Projects\RoutineTest\RoutineTest\obj\x86\Debug\RoutineTest.pdb
-d:\documents\visual studio 2010\Projects\RoutineTest\RoutineTest\bin\Debug\RoutineTest.exe.config
-D:\gitui\learngit\RoutineTest\RoutineTest\bin\Debug\RoutineTest.exe.config
 D:\gitui\learngit\RoutineTest\RoutineTest\obj\x86\Debug\RoutineTest.exe
 D:\gitui\learngit\RoutineTest\RoutineTest\obj\x86\Debug\RoutineTest.pdb
-D:\gitui\learngit\RoutineTest\RoutineTest\bin\Debug\RoutineTest.exe
-D:\gitui\learngit\RoutineTest\RoutineTest\bin\Debug\RoutineTest.pdb
-D:\gitui\learngit\RoutineTest\RoutineTest\bin\Debug\TXOrm.dll
-D:\gitui\learngit\RoutineTest\RoutineTest\bin\Debug\TXOrm.pdb
-F:\GitProject\QiuProject\learngit\RoutineTest\RoutineTest\bin\Debug\RoutineTest.exe.config
-F:\GitProject\QiuProject\learngit\RoutineTest\RoutineTest\bin\Debug\RoutineTest.exe
-F:\GitProject\QiuProject\learngit\RoutineTest\RoutineTest\bin\Debug\RoutineTest.pdb
-F:\GitProject\QiuProject\learngit\RoutineTest\RoutineTest\bin\Debug\TXOrm.pdb
-F:\GitProject\QiuProject\learngit\RoutineTest\RoutineTest\obj\x86\Debug\RoutineTest.csprojResolveAssemblyReference.cache
-F:\GitProject\QiuProject\learngit\RoutineTest\RoutineTest\obj\x86\Debug\RoutineTest.exe
-F:\GitProject\QiuProject\learngit\RoutineTest\RoutineTest\obj\x86\Debug\RoutineTest.pdb
->>>>>>> 8345cbacd5032a91cb4545f981d0905012804cab

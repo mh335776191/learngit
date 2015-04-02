@@ -14,17 +14,4 @@ D:\gitui\learngit\RoutineTest\OperationData\obj\Debug\OperationData.dll
 D:\gitui\learngit\RoutineTest\OperationData\obj\Debug\OperationData.pdb
 D:\gitui\learngit\RoutineTest\OperationData\obj\Debug\OperationData.csprojResolveAssemblyReference.cache
 =======
-F:\GitProject\QiuProject\learngit\RoutineTest\OperationData\bin\Debug\OperationData.dll
-F:\GitProject\QiuProject\learngit\RoutineTest\OperationData\bin\Debug\OperationData.pdb
-F:\GitProject\QiuProject\learngit\RoutineTest\OperationData\obj\Debug\OperationData.dll
-F:\GitProject\QiuProject\learngit\RoutineTest\OperationData\obj\Debug\OperationData.pdb
-D:\gitui\learngit\RoutineTest\OperationData\bin\Debug\log4net.config
-D:\gitui\learngit\RoutineTest\OperationData\bin\Debug\OperationData.dll
-D:\gitui\learngit\RoutineTest\OperationData\bin\Debug\OperationData.pdb
-D:\gitui\learngit\RoutineTest\OperationData\bin\Debug\log4net.dll
-D:\gitui\learngit\RoutineTest\OperationData\bin\Debug\log4net.xml
-D:\gitui\learngit\RoutineTest\OperationData\obj\Debug\Interop.TaskScheduler.dll
-D:\gitui\learngit\RoutineTest\OperationData\obj\Debug\OperationData.csproj.ResolveComReference.cache
-D:\gitui\learngit\RoutineTest\OperationData\obj\Debug\OperationData.dll
-D:\gitui\learngit\RoutineTest\OperationData\obj\Debug\OperationData.pdb
 >>>>>>> 8345cbacd5032a91cb4545f981d0905012804cab
