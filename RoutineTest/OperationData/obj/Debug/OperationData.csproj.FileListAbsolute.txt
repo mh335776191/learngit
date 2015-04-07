@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-F:\GitProject\QiuProject\learngit\RoutineTest\OperationData\bin\Debug\OperationData.dll
-F:\GitProject\QiuProject\learngit\RoutineTest\OperationData\bin\Debug\OperationData.pdb
-F:\GitProject\QiuProject\learngit\RoutineTest\OperationData\obj\Debug\OperationData.dll
-F:\GitProject\QiuProject\learngit\RoutineTest\OperationData\obj\Debug\OperationData.pdb
 D:\gitui\learngit\RoutineTest\OperationData\bin\Debug\log4net.config
 D:\gitui\learngit\RoutineTest\OperationData\bin\Debug\OperationData.dll
 D:\gitui\learngit\RoutineTest\OperationData\bin\Debug\OperationData.pdb
@@ -13,5 +8,3 @@ D:\gitui\learngit\RoutineTest\OperationData\obj\Debug\OperationData.csproj.Resol
 D:\gitui\learngit\RoutineTest\OperationData\obj\Debug\OperationData.dll
 D:\gitui\learngit\RoutineTest\OperationData\obj\Debug\OperationData.pdb
 D:\gitui\learngit\RoutineTest\OperationData\obj\Debug\OperationData.csprojResolveAssemblyReference.cache
-=======
->>>>>>> 8345cbacd5032a91cb4545f981d0905012804cab

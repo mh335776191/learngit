@@ -13,30 +13,30 @@ using System.Xml;
 using System.Drawing;
 namespace RoutineTest
 {
-    static class Program
+  static  class Program
     {
-        private static System.Timers.Timer timer = new System.Timers.Timer();
+        public static event Action<string> TestEventHander;
+
+        private static void OnTestEventHander(string obj)
+        {
+            Action<string> handler = TestEventHander;
+            if (handler != null) handler(obj);
+        }
+
         static void Main()
         {
-            Itest tt = new testtruct();
-            Console.Write(Program.ddd().i);
+
+            Program.TestEventHander += ddd;
+            Program.TestEventHander += ddd;
+            Program.OnTestEventHander("4");
             //Console.WriteLine(tt.GetType());
             //Console.Write(foo(20, 13));
             Console.ReadKey();
         }
 
-        private static testsealed ddd()
+        private static void ddd(string s)
         {
-            testsealed t = new testsealed();
-            try
-            {
-                ++t.i;
-                return t;
-            }
-            finally
-            {
-                ++t.i;
-            }
+            Console.WriteLine(s);
 
         }
 

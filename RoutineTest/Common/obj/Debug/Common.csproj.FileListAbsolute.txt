@@ -2,3 +2,4 @@ D:\gitui\learngit\RoutineTest\Common\bin\Debug\Common.dll
 D:\gitui\learngit\RoutineTest\Common\bin\Debug\Common.pdb
 D:\gitui\learngit\RoutineTest\Common\obj\Debug\Common.dll
 D:\gitui\learngit\RoutineTest\Common\obj\Debug\Common.pdb
+D:\gitui\learngit\RoutineTest\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
