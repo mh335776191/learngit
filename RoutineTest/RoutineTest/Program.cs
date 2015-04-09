@@ -4,7 +4,8 @@ using System.Data.SqlClient;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using System.Text;
+﻿using System.Runtime.InteropServices;
+﻿using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Timers;
@@ -13,7 +14,7 @@ using System.Xml;
 using System.Drawing;
 namespace RoutineTest
 {
-  static  class Program
+    class Program
     {
         public static event Action<string> TestEventHander;
 
@@ -23,14 +24,39 @@ namespace RoutineTest
             if (handler != null) handler(obj);
         }
 
+        public void testmethod(Itest test)
+        {
+            Console.WriteLine("接口");
+        }
+
+        public void testmethod(test test)
+        {
+            Console.WriteLine("子类");
+        }
+        [DllImport("user32.dll", EntryPoint = "ShowWindow", SetLastError = true)]
+        static extern bool ShowWindow(IntPtr hWnd, uint nCmdShow);
+        [DllImport("user32.dll", EntryPoint = "FindWindow", SetLastError = true)]
+        public static extern IntPtr FindWindow(string lpClassName, string lpWindowName);
         static void Main()
         {
-
-            Program.TestEventHander += ddd;
-            Program.TestEventHander += ddd;
-            Program.OnTestEventHander("4");
+            Console.Title = "获取数据";
+            IntPtr intptr = FindWindow("ConsoleWindowClass", "获取数据");
+            if (intptr != IntPtr.Zero)
+            {
+                ShowWindow(intptr, 0);//隐藏这个窗口
+            }
+            
+            //Program.TestEventHander += ddd;
+            //Program.TestEventHander += ddd;
+            //Program.OnTestEventHander("4");
             //Console.WriteLine(tt.GetType());
             //Console.Write(foo(20, 13));
+          
+            Program p = new Program();
+            Itest i = null;
+            test t = new test();
+            Itest ti = new test();
+            p.testmethod(ti);
             Console.ReadKey();
         }
 
@@ -39,7 +65,6 @@ namespace RoutineTest
             Console.WriteLine(s);
 
         }
-
         static int foo(int x, int y)
         {
             if (x <= 0 || y <= 0)
@@ -69,12 +94,6 @@ namespace RoutineTest
             }
             return "";
         }
-
-        public static void AddNewMethod(this testsealed o)
-        {
-            Console.WriteLine("密封类扩展方法");
-        }
-
         public static string sKey(string Key)
         {
             int num = 5381;
@@ -104,7 +123,7 @@ namespace RoutineTest
         public int i = 1;
     }
 
-    internal class test
+    internal class test : Itest
     {
         public void testme()
         {
