@@ -68,14 +68,15 @@ namespace OperationData.DAL
         {
             List<DisPlayModel> list = new List<DisPlayModel>();
             string sql = string.Format(@"SELECT  *
-                                        FROM    ( SELECT    ROW_NUMBER() OVER ( ORDER BY cast((convert(varchar,CreateDate,112)) as int) DESC, cast((convert(varchar,PublishDate,112)) as int) DESC, goodnum DESC ) RowID,
-                                                            Id ,FormId,
-                                                            Content ,
-                                                            ImgUrl ,
-                                                            Tag ,
-                                                            PublishDate
-                                                  FROM      dbo.JokeDetail
-                                                ) temp
+                                            FROM    ( SELECT    ROW_NUMBER() OVER ( ORDER BY PublishDate DESC, CreateDate DESC, goodnum DESC ) RowID ,
+                                                                Id ,
+                                                                FormId ,
+                                                                Content ,
+                                                                ImgUrl ,
+                                                                Tag ,
+                                                                PublishDate
+                                                      FROM      dbo.JokeDetail
+                                                    ) temp
                                         WHERE   RowID BETWEEN {0} AND {1}", (index - 1) * pagesize + 1, index * pagesize);
             var reader = SqlHelper.ExecuteReader(_constr, System.Data.CommandType.Text, sql);
             while (reader.Read())
