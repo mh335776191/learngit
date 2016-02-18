@@ -7,4 +7,3 @@ D:\gitui\learngit\RoutineTest\OperationData\obj\Debug\Interop.TaskScheduler.dll
 D:\gitui\learngit\RoutineTest\OperationData\obj\Debug\OperationData.csproj.ResolveComReference.cache
 D:\gitui\learngit\RoutineTest\OperationData\obj\Debug\OperationData.dll
 D:\gitui\learngit\RoutineTest\OperationData\obj\Debug\OperationData.pdb
-D:\gitui\learngit\RoutineTest\OperationData\obj\Debug\OperationData.csprojResolveAssemblyReference.cache

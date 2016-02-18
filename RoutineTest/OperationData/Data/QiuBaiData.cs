@@ -113,8 +113,14 @@ namespace OperationData.Data
                             {
                                 var mtc = DetailReg.Match(detailhtml);
                                 DateTime date;
-                                DateTime.TryParse(mtc.Groups["date"].Value, out date);
-                                model.PublishDate = date;
+                                if (DateTime.TryParse(mtc.Groups["date"].Value, out date))
+                                {
+                                    model.PublishDate = date;
+                                }
+                                else
+                                {
+                                    model.PublishDate = DateTime.Now;
+                                }
                                 model.ImgUrl = ImgReg.Match(mtc.Groups["content"].Value).Groups["imgsrc"].Value;
                                 model.Content = htmlreplaceReg.Replace(mtc.Groups["content"].Value, "").Replace("'", "").Replace("\\r", "").Replace("\\n", "");
                                 model.Author = mtc.Groups["author"].Value.Replace("'", "");

@@ -1,0 +1,1758 @@
+<HR COLOR=red>
+异常时间：2015-08-13 12:03:04,407 [1] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+糗百数据获取异常 <BR>
+ <HR Size=1>System.AggregateException: 发生一个或多个错误。 ---> System.Data.SqlClient.SqlException: 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task.WaitAll(Task[] tasks, Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.WaitAll(Task[] tasks, Int32 millisecondsTimeout)
+   在 System.Threading.Tasks.Task.WaitAll(Task[] tasks)
+   在 OperationData.Data.QiuBaiData.GetWebData()
+---> (内部异常 #0) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:2ddbae15-160d-4773-b3d8-a11f3c751a57<---
+
+---> (内部异常 #1) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:2ddbae15-160d-4773-b3d8-a11f3c751a57<---
+
+---> (内部异常 #2) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:2ddbae15-160d-4773-b3d8-a11f3c751a57<---
+
+---> (内部异常 #3) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:2ddbae15-160d-4773-b3d8-a11f3c751a57<---
+
+<HR COLOR=red>
+异常时间：2015-08-13 13:01:50,328 [1] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+糗百数据获取异常 <BR>
+ <HR Size=1>System.AggregateException: 发生一个或多个错误。 ---> System.Data.SqlClient.SqlException: 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task.WaitAll(Task[] tasks, Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.WaitAll(Task[] tasks, Int32 millisecondsTimeout)
+   在 System.Threading.Tasks.Task.WaitAll(Task[] tasks)
+   在 OperationData.Data.QiuBaiData.GetWebData()
+---> (内部异常 #0) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:e92ec858-ea3d-4ee9-ad33-95e709508698<---
+
+---> (内部异常 #1) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:e92ec858-ea3d-4ee9-ad33-95e709508698<---
+
+---> (内部异常 #2) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:e92ec858-ea3d-4ee9-ad33-95e709508698<---
+
+---> (内部异常 #3) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:e92ec858-ea3d-4ee9-ad33-95e709508698<---
+
+<HR COLOR=red>
+异常时间：2015-08-13 13:59:50,328 [1] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+糗百数据获取异常 <BR>
+ <HR Size=1>System.AggregateException: 发生一个或多个错误。 ---> System.Data.SqlClient.SqlException: 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task.WaitAll(Task[] tasks, Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.WaitAll(Task[] tasks, Int32 millisecondsTimeout)
+   在 System.Threading.Tasks.Task.WaitAll(Task[] tasks)
+   在 OperationData.Data.QiuBaiData.GetWebData()
+---> (内部异常 #0) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:242a789e-1576-41bb-b54f-a8f089cc727a<---
+
+---> (内部异常 #1) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:242a789e-1576-41bb-b54f-a8f089cc727a<---
+
+---> (内部异常 #2) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:242a789e-1576-41bb-b54f-a8f089cc727a<---
+
+---> (内部异常 #3) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:242a789e-1576-41bb-b54f-a8f089cc727a<---
+
+<HR COLOR=red>
+异常时间：2015-08-13 15:00:22,463 [1] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+糗百数据获取异常 <BR>
+ <HR Size=1>System.AggregateException: 发生一个或多个错误。 ---> System.Data.SqlClient.SqlException: 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task.WaitAll(Task[] tasks, Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.WaitAll(Task[] tasks, Int32 millisecondsTimeout)
+   在 System.Threading.Tasks.Task.WaitAll(Task[] tasks)
+   在 OperationData.Data.QiuBaiData.GetWebData()
+---> (内部异常 #0) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:58c54ded-5313-49d8-b6c0-c26658feca7e<---
+
+---> (内部异常 #1) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+语句已终止。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:58c54ded-5313-49d8-b6c0-c26658feca7e<---
+
+---> (内部异常 #2) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:58c54ded-5313-49d8-b6c0-c26658feca7e<---
+
+---> (内部异常 #3) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:58c54ded-5313-49d8-b6c0-c26658feca7e<---
+
+<HR COLOR=red>
+异常时间：2015-08-13 15:59:24,448 [1] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+糗百数据获取异常 <BR>
+ <HR Size=1>System.AggregateException: 发生一个或多个错误。 ---> System.Data.SqlClient.SqlException: 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task.WaitAll(Task[] tasks, Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.WaitAll(Task[] tasks, Int32 millisecondsTimeout)
+   在 System.Threading.Tasks.Task.WaitAll(Task[] tasks)
+   在 OperationData.Data.QiuBaiData.GetWebData()
+---> (内部异常 #0) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:2901efa8-698b-46bc-b8c8-cb09cfa41a85<---
+
+---> (内部异常 #1) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:2901efa8-698b-46bc-b8c8-cb09cfa41a85<---
+
+---> (内部异常 #2) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:2901efa8-698b-46bc-b8c8-cb09cfa41a85<---
+
+---> (内部异常 #3) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:2901efa8-698b-46bc-b8c8-cb09cfa41a85<---
+
+---> (内部异常 #4) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:2901efa8-698b-46bc-b8c8-cb09cfa41a85<---
+
+<HR COLOR=red>
+异常时间：2015-08-13 16:59:45,637 [1] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+糗百数据获取异常 <BR>
+ <HR Size=1>System.AggregateException: 发生一个或多个错误。 ---> System.Data.SqlClient.SqlException: 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task.WaitAll(Task[] tasks, Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.WaitAll(Task[] tasks, Int32 millisecondsTimeout)
+   在 System.Threading.Tasks.Task.WaitAll(Task[] tasks)
+   在 OperationData.Data.QiuBaiData.GetWebData()
+---> (内部异常 #0) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:b98a4c70-603f-470e-a8da-90c718290146<---
+
+---> (内部异常 #1) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:b98a4c70-603f-470e-a8da-90c718290146<---
+
+---> (内部异常 #2) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:b98a4c70-603f-470e-a8da-90c718290146<---
+
+---> (内部异常 #3) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:b98a4c70-603f-470e-a8da-90c718290146<---
+
+<HR COLOR=red>
+异常时间：2015-08-13 17:59:22,619 [1] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+糗百数据获取异常 <BR>
+ <HR Size=1>System.AggregateException: 发生一个或多个错误。 ---> System.Data.SqlClient.SqlException: 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task.WaitAll(Task[] tasks, Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.WaitAll(Task[] tasks, Int32 millisecondsTimeout)
+   在 System.Threading.Tasks.Task.WaitAll(Task[] tasks)
+   在 OperationData.Data.QiuBaiData.GetWebData()
+---> (内部异常 #0) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:fc2d6c59-3204-4b82-94a7-09f960b3770e<---
+
+---> (内部异常 #1) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:fc2d6c59-3204-4b82-94a7-09f960b3770e<---
+
+---> (内部异常 #2) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+语句已终止。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:fc2d6c59-3204-4b82-94a7-09f960b3770e<---
+
+---> (内部异常 #3) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:fc2d6c59-3204-4b82-94a7-09f960b3770e<---
+
+---> (内部异常 #4) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:fc2d6c59-3204-4b82-94a7-09f960b3770e<---
+
+<HR COLOR=red>
+异常时间：2015-08-13 18:59:16,613 [1] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+糗百数据获取异常 <BR>
+ <HR Size=1>System.AggregateException: 发生一个或多个错误。 ---> System.Data.SqlClient.SqlException: 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task.WaitAll(Task[] tasks, Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.WaitAll(Task[] tasks, Int32 millisecondsTimeout)
+   在 System.Threading.Tasks.Task.WaitAll(Task[] tasks)
+   在 OperationData.Data.QiuBaiData.GetWebData()
+---> (内部异常 #0) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:111dd5f7-a899-44c4-ad03-a49ea1b2d11f<---
+
+---> (内部异常 #1) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:111dd5f7-a899-44c4-ad03-a49ea1b2d11f<---
+
+---> (内部异常 #2) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:111dd5f7-a899-44c4-ad03-a49ea1b2d11f<---
+
+---> (内部异常 #3) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:111dd5f7-a899-44c4-ad03-a49ea1b2d11f<---
+
+---> (内部异常 #4) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:111dd5f7-a899-44c4-ad03-a49ea1b2d11f<---
+
+<HR COLOR=red>
+异常时间：2015-08-13 19:59:06,184 [1] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+糗百数据获取异常 <BR>
+ <HR Size=1>System.AggregateException: 发生一个或多个错误。 ---> System.Data.SqlClient.SqlException: 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task.WaitAll(Task[] tasks, Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.WaitAll(Task[] tasks, Int32 millisecondsTimeout)
+   在 System.Threading.Tasks.Task.WaitAll(Task[] tasks)
+   在 OperationData.Data.QiuBaiData.GetWebData()
+---> (内部异常 #0) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:20e55019-58e7-4333-8549-c3238e4cfaeb<---
+
+---> (内部异常 #1) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:20e55019-58e7-4333-8549-c3238e4cfaeb<---
+
+---> (内部异常 #2) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:20e55019-58e7-4333-8549-c3238e4cfaeb<---
+
+---> (内部异常 #3) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:20e55019-58e7-4333-8549-c3238e4cfaeb<---
+
+---> (内部异常 #4) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:20e55019-58e7-4333-8549-c3238e4cfaeb<---
+
+<HR COLOR=red>
+异常时间：2015-08-13 20:59:01,854 [1] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+糗百数据获取异常 <BR>
+ <HR Size=1>System.AggregateException: 发生一个或多个错误。 ---> System.Data.SqlClient.SqlException: 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task.WaitAll(Task[] tasks, Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.WaitAll(Task[] tasks, Int32 millisecondsTimeout)
+   在 System.Threading.Tasks.Task.WaitAll(Task[] tasks)
+   在 OperationData.Data.QiuBaiData.GetWebData()
+---> (内部异常 #0) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:edda3170-647f-43ce-a112-332cf7946508<---
+
+---> (内部异常 #1) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:edda3170-647f-43ce-a112-332cf7946508<---
+
+---> (内部异常 #2) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:edda3170-647f-43ce-a112-332cf7946508<---
+
+---> (内部异常 #3) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:edda3170-647f-43ce-a112-332cf7946508<---
+
+---> (内部异常 #4) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+语句已终止。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:edda3170-647f-43ce-a112-332cf7946508<---
+
+<HR COLOR=red>
+异常时间：2015-08-13 21:59:10,927 [1] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+糗百数据获取异常 <BR>
+ <HR Size=1>System.AggregateException: 发生一个或多个错误。 ---> System.Data.SqlClient.SqlException: 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task.WaitAll(Task[] tasks, Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.WaitAll(Task[] tasks, Int32 millisecondsTimeout)
+   在 System.Threading.Tasks.Task.WaitAll(Task[] tasks)
+   在 OperationData.Data.QiuBaiData.GetWebData()
+---> (内部异常 #0) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:93f0e38c-4e3f-4e6b-ac49-b2522591c6c3<---
+
+---> (内部异常 #1) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:93f0e38c-4e3f-4e6b-ac49-b2522591c6c3<---
+
+---> (内部异常 #2) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:93f0e38c-4e3f-4e6b-ac49-b2522591c6c3<---
+
+---> (内部异常 #3) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:93f0e38c-4e3f-4e6b-ac49-b2522591c6c3<---
+
+---> (内部异常 #4) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:93f0e38c-4e3f-4e6b-ac49-b2522591c6c3<---
+
+<HR COLOR=red>
+异常时间：2015-08-13 22:59:13,402 [1] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+糗百数据获取异常 <BR>
+ <HR Size=1>System.AggregateException: 发生一个或多个错误。 ---> System.Data.SqlClient.SqlException: 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task.WaitAll(Task[] tasks, Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.WaitAll(Task[] tasks, Int32 millisecondsTimeout)
+   在 System.Threading.Tasks.Task.WaitAll(Task[] tasks)
+   在 OperationData.Data.QiuBaiData.GetWebData()
+---> (内部异常 #0) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:d9171d7b-9af6-45d6-9157-0d6a790ea1b1<---
+
+---> (内部异常 #1) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:d9171d7b-9af6-45d6-9157-0d6a790ea1b1<---
+
+---> (内部异常 #2) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:d9171d7b-9af6-45d6-9157-0d6a790ea1b1<---
+
+---> (内部异常 #3) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:d9171d7b-9af6-45d6-9157-0d6a790ea1b1<---
+
+<HR COLOR=red>
+异常时间：2015-08-13 23:59:21,172 [1] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+糗百数据获取异常 <BR>
+ <HR Size=1>System.AggregateException: 发生一个或多个错误。 ---> System.Data.SqlClient.SqlException: 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task.WaitAll(Task[] tasks, Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.WaitAll(Task[] tasks, Int32 millisecondsTimeout)
+   在 System.Threading.Tasks.Task.WaitAll(Task[] tasks)
+   在 OperationData.Data.QiuBaiData.GetWebData()
+---> (内部异常 #0) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:6229ef7c-805b-49e2-b8a2-f63a86634573<---
+
+---> (内部异常 #1) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:6229ef7c-805b-49e2-b8a2-f63a86634573<---
+
+---> (内部异常 #2) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:6229ef7c-805b-49e2-b8a2-f63a86634573<---
+
+---> (内部异常 #3) System.Data.SqlClient.SqlException (0x80131904): 从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。
+语句已终止。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters)
+   在 SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText)
+   在 OperationData.DAL.QiuBaiDal.InsertData(List`1 model)
+   在 OperationData.Data.QiuBaiData.<>c__DisplayClass5.<GetWebData>b__0(Object k)
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+ClientConnectionId:6229ef7c-805b-49e2-b8a2-f63a86634573<---
+
