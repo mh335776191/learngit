@@ -17,8 +17,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperationData", "OperationD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddTaskScheuler", "AddTaskScheuler\AddTaskScheuler.csproj", "{7EDEAFCC-4E3F-4011-B9EB-055A108C0128}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JokeWeb", "JokeWeb\JokeWeb.csproj", "{6F11CDC1-506D-45B5-8B84-66FE9FA38570}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JokeWebs", "JokeWebs\JokeWebs.csproj", "{C25E5ED5-A77D-4628-9EB8-8E0A5A7A7E7D}"
 EndProject
 Global
@@ -91,16 +89,6 @@ Global
 		{7EDEAFCC-4E3F-4011-B9EB-055A108C0128}.Release|Mixed Platforms.Build.0 = Release|x86
 		{7EDEAFCC-4E3F-4011-B9EB-055A108C0128}.Release|x86.ActiveCfg = Release|x86
 		{7EDEAFCC-4E3F-4011-B9EB-055A108C0128}.Release|x86.Build.0 = Release|x86
-		{6F11CDC1-506D-45B5-8B84-66FE9FA38570}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6F11CDC1-506D-45B5-8B84-66FE9FA38570}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6F11CDC1-506D-45B5-8B84-66FE9FA38570}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{6F11CDC1-506D-45B5-8B84-66FE9FA38570}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{6F11CDC1-506D-45B5-8B84-66FE9FA38570}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{6F11CDC1-506D-45B5-8B84-66FE9FA38570}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6F11CDC1-506D-45B5-8B84-66FE9FA38570}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6F11CDC1-506D-45B5-8B84-66FE9FA38570}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{6F11CDC1-506D-45B5-8B84-66FE9FA38570}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{6F11CDC1-506D-45B5-8B84-66FE9FA38570}.Release|x86.ActiveCfg = Release|Any CPU
 		{C25E5ED5-A77D-4628-9EB8-8E0A5A7A7E7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C25E5ED5-A77D-4628-9EB8-8E0A5A7A7E7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C25E5ED5-A77D-4628-9EB8-8E0A5A7A7E7D}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU

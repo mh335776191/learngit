@@ -1,0 +1,117 @@
+﻿@{
+    ViewBag.Title = "╮(╯3╰)╭";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model List<OperationData.Model.DisPlayModel>
+<script src="http://masonry.desandro.com/masonry.pkgd.min.js"></script>
+<script src="http://desandro.github.io/imagesloaded/imagesloaded.pkgd.min.js">
+</script>
+<div id="plist">
+</div>
+<div style="text-align: center;" id="pageloding">
+    正在加载
+</div>
+<script>
+    var pindex = 1;
+    var islast = false;
+    var $container = $('#plist');
+    $(function () {//瀑布流分页
+        $container.masonry({
+            itemSelector: '.pdiv',
+            isAnimated: true,
+             columnWidth: 30,
+        });
+        LoadData(1);
+        $(window).bind("scroll", function () {
+            // 判断窗口的滚动条是否接近页面底部
+            if ($(document).scrollTop() + $(window).height() > $(document).height() - 10) {
+                // 判断下一页链接是否为空
+                if (!islast) {//不是最后一页翻页
+                    if (pindex > 1 && $("#pageloding").is(":hidden")) {
+                        //第一页要加载完毕,上页加载完毕
+                        $("#pageloding").show("fast");
+                        // Ajax 翻页
+                        LoadData(pindex);
+                    }
+                } else {
+                    $("#pageloding").html("木有了噢，最后一页了！");
+                    $("#pageloding").show("fast");
+                }
+            }
+        });
+    });
+    function LoadData(index) {
+        $.ajax({
+            url: "/home/_list",
+            data: { index: index },
+            type: "POST",
+            success: function (data) {
+                ShowResult(data);
+                pindex++;
+            },
+            complete: function () {
+
+            }
+        });
+    }
+    function ShowResult(data) {
+        if (data == "-1") {
+            islast = true;
+            $("#pageloding").html("木有了噢，最后一页了！");
+            $("#pageloding").show("fast");
+            return;
+        }
+        var listhtml = "";
+        for (var i = 0; i < data.length; i++) {
+            listhtml += '<div class="pdiv">'+ (data[i].ImgPath == "" ? "" : '<img src="' +data[i].ImgPath + '" />')+' <div class="content_text" data-id="' + data[i].FormId + '">' + data[i].Content + ' </div></div>';
+        }
+        var reg = /\r|\n/g;
+        listhtml = listhtml.replace(reg, "");
+        //                var $newElems = $(listhtml);
+        //                $container.append($newElems);
+        //                $newElems.animate({ opacity: 1 });
+
+        var $newElems = $(listhtml).css({ opacity: 1 }).appendTo($container);
+        $newElems.imagesLoaded(function () {
+            $newElems.animate({ opacity: 1 });
+            $container.masonry('appended', $newElems, true);
+        });
+        // 隐藏正在加载模块
+        $("#pageloding").hide("slow");
+
+    }
+</script>
+<style>
+    .main {
+        margin: 10px auto;
+        width: 90%;
+        font-size: 12px;
+        color: #666;
+    }
+
+    #pageloding {
+        bottom: 50px;
+        width: 100%;
+        height: 52px;
+        text-align: center;
+        display: none;
+    }
+
+    .pdiv {
+        border: 1px solid #D4D4D4;
+        margin: 0 10px 10px 0;
+        padding: 10px;
+        position: relative;
+        max-width: 380px;
+        float: left;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .content_text {
+        max-width: 90%;
+        text-align: center;
+    }
+</style>

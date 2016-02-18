@@ -1,0 +1,9 @@
+D:\gitui\learngit\RoutineTest\OperationData\bin\Release\log4net.config
+D:\gitui\learngit\RoutineTest\OperationData\bin\Release\OperationData.dll
+D:\gitui\learngit\RoutineTest\OperationData\bin\Release\OperationData.pdb
+D:\gitui\learngit\RoutineTest\OperationData\bin\Release\log4net.dll
+D:\gitui\learngit\RoutineTest\OperationData\bin\Release\log4net.xml
+D:\gitui\learngit\RoutineTest\OperationData\obj\Release\Interop.TaskScheduler.dll
+D:\gitui\learngit\RoutineTest\OperationData\obj\Release\OperationData.csproj.ResolveComReference.cache
+D:\gitui\learngit\RoutineTest\OperationData\obj\Release\OperationData.dll
+D:\gitui\learngit\RoutineTest\OperationData\obj\Release\OperationData.pdb
