@@ -13,7 +13,7 @@ namespace OperationData.Data
     public class QiuBaiData : BaseData
     {
         private const string MAINURL = "http://www.qiushibaike.com";
-        private readonly Regex NextPageReg = new Regex("<a[^>]*?href=\"(?<nextpage>[^>]*?)\"[^>]*>\\s*下一页", RegexOptions.IgnoreCase);
+        private readonly Regex NextPageReg = new Regex("<a[^>]*?href=\"(?<nextpage>[^>]*?)\"[^>]*>\\s*<span[^>]*>\\s*下一页", RegexOptions.IgnoreCase);
         private readonly Regex ListHrefReg = new Regex("<li[^>]*?class=\"comments\"[^>]?>\\s*<a[^>]*?href=\"(?<detailhref>[^>\"]*)\"[^>]*?id=\"c-(?<fromid>\\d+)\"\\s*class=\"qiushi_comments\"", RegexOptions.IgnoreCase);
         private readonly Regex DetailReg = new Regex("(<div[^>]*?class=\"author[^>]*>[\\s\\S]*?<img[^>]*alt=\"(?<author>[^\"]*)\"[\\s\\S]*?</div>\\s*)?\\s*<div[^>]*title=\"下一条\">\\s*(?<content><div[^>]*?class=\"content\"\\s*>[\\s\\S]*?<!--(?<date>[^>]*?)-->\\s*</div>\\s*(<div[^>]*class=\"thumb\">[\\s\\S]*?</div>)?)\\s*</div>\\s*<div[^>]*?class=\"stats\"[^>]*?>[\\s\\S]*?<span[^>]*class=\"number hidden\"[^>]*>(?<goodnum>\\d+)</span>[\\s\\S]*?<span[^>]*?class=\"number hidden\"[^>]*>-(?<replynum>\\d+)</span>", RegexOptions.IgnoreCase);
         private readonly Regex ImgReg = new Regex("<img[^>]*?src=\"(?<imgsrc>[^\"]*)\"[^>]*>", RegexOptions.IgnoreCase);
@@ -34,7 +34,7 @@ namespace OperationData.Data
                     "imgrank",
                     "late",
                     "history",
-                    "8hr", 
+                    "8hr",
                     "hot"};
             try
             {
@@ -62,7 +62,7 @@ namespace OperationData.Data
                                  if (string.IsNullOrWhiteSpace(nextpage))
                                  {
                                      datalist.AddRange(ProcessHtml(html, column1.ToString()));
-                                     break;
+                                     html = "";
                                  }
                                  sumcount += datalist.Count;
                                  Dal.InsertData(datalist);

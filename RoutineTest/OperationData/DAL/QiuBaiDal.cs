@@ -14,6 +14,10 @@ namespace OperationData.DAL
         {
             _constr = System.Configuration.ConfigurationSettings.AppSettings["JokeDb"];
         }
+        public QiuBaiDal(string appsetting)
+        {
+            _constr = appsetting;
+        }
         public List<RepeatModel> LoadDbFormID()
         {
             List<RepeatModel> list = new List<RepeatModel>();
@@ -32,13 +36,19 @@ namespace OperationData.DAL
         }
         public void InsertData(List<IInfoModel> model)
         {
-            StringBuilder sb = new StringBuilder();
-            foreach (var m in model)
+            var pagesize = 1000;
+            var totalpage = model.Count / 1000 + (model.Count % 1000 > 1 ? 1 : 0);
+            for (int page = 0; page < totalpage; page++)
             {
-                QiuBaiInfoModel qiubaimodel = m as QiuBaiInfoModel;
-                if (qiubaimodel != null)
+                var tempmodel = model.Skip(pagesize * page).Take(pagesize);
+
+                StringBuilder sb = new StringBuilder();
+                foreach (var m in tempmodel)
                 {
-                    sb.AppendFormat(@"INSERT INTO dbo.JokeDetail
+                    QiuBaiInfoModel qiubaimodel = m as QiuBaiInfoModel;
+                    if (qiubaimodel != null)
+                    {
+                        sb.AppendFormat(@"INSERT INTO dbo.JokeDetail
                                                 ( FormId ,
                                                   Author ,
                                                   PublishDate ,
@@ -53,14 +63,15 @@ namespace OperationData.DAL
                                                   '{4}' , -- ImgUrl - varchar(500)
                                                   '{5}',  -- Tag - varchar(10)          
                                                {6},{7} )", qiubaimodel.FormId, qiubaimodel.Author, qiubaimodel.PublishDate,
-                                    qiubaimodel.Content, qiubaimodel.ImgUrl, qiubaimodel.Tag, qiubaimodel.GoodNum, qiubaimodel.ReplyNum);
+                                        qiubaimodel.Content, qiubaimodel.ImgUrl, qiubaimodel.Tag, qiubaimodel.GoodNum, qiubaimodel.ReplyNum);
+                    }
                 }
-            }
-            string sql = sb.ToString();
-            if (!string.IsNullOrWhiteSpace(sql))
-            {
-                SqlHelper.ExecuteNonQuery(_constr,
-                                          System.Data.CommandType.Text, sql);
+                string sql = sb.ToString();
+                if (!string.IsNullOrWhiteSpace(sql))
+                {
+                    SqlHelper.ExecuteNonQuery(_constr,
+                                              System.Data.CommandType.Text, sql);
+                }
             }
         }
 

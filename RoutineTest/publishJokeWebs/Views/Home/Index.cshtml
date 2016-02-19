@@ -63,7 +63,7 @@
         }
         var listhtml = "";
         for (var i = 0; i < data.length; i++) {
-            listhtml += '<div class="pdiv">'+ (data[i].ImgPath == "" ? "" : '<img src="' +data[i].ImgPath + '" />')+' <div class="content_text" data-id="' + data[i].FormId + '">' + data[i].Content + ' </div></div>';
+            listhtml += '<div class="pdiv">' + (data[i].ImgPath == "" ? "" : '<img src="' + data[i].ImgPath + '" />') + ' <div class="content_text" data-id="' + data[i].FormId + '">' + data[i].Content + '发布时间:' + data[i].ShowPublishDate + ' </div></div>';
         }
         var reg = /\r|\n/g;
         listhtml = listhtml.replace(reg, "");

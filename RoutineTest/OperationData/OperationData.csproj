@@ -51,6 +51,7 @@
     <Compile Include="DAL\QiuBaiDal.cs" />
     <Compile Include="Data\BaseData.cs" />
     <Compile Include="Data\QiuBaiData.cs" />
+    <Compile Include="Data\SynAliData.cs" />
     <Compile Include="Model\DisPlayModel.cs" />
     <Compile Include="Model\IInfoModel.cs" />
     <Compile Include="Model\QiuBaiInfoModel.cs" />

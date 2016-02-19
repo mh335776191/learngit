@@ -13,5 +13,8 @@ namespace OperationData.Model
         public string ImgPath { get; set; }
         public int FormId { get; set; }
         public DateTime PublishDate { get; set; }
+        public  string ShowPublishDate {
+            get { return PublishDate.ToString("yyyy-M-d HH:mm:ss"); }
+        }
     }
 }
