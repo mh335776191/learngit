@@ -1,10 +1,18 @@
 ﻿@{
-    ViewBag.Title = "╮(╯3╰)╭";
+    ViewBag.Title = "Note";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @model List<OperationData.Model.DisPlayModel>
 <script src="http://masonry.desandro.com/masonry.pkgd.min.js"></script>
-<script src="http://desandro.github.io/imagesloaded/imagesloaded.pkgd.min.js">
+<script src="http://desandro.github.io/imagesloaded/imagesloaded.pkgd.min.js"></script>
+@*<script src="https://rawgit.com/mh335776191/JqueryPlugin/master/BigZoomShow/BigZoomShow.js"></script>*@
+<script type="text/javascript" src="~/Scripts/Plugin/BigZoomShow.js"> </script>
+<script>
+    $(function () {
+        //$(document).delegate(".pdiv","click", function () {
+        //    alert("1234");
+        //});
+    })
 </script>
 <div id="plist">
 </div>
@@ -16,10 +24,11 @@
     var islast = false;
     var $container = $('#plist');
     $(function () {//瀑布流分页
+        $("div[data='list']").BigShow({ fontsize: 15, fontcolor: 'blue', BigRate:1.5 });
         $container.masonry({
             itemSelector: '.pdiv',
             isAnimated: true,
-             columnWidth: 30,
+            columnWidth: 30,
         });
         LoadData(1);
         $(window).bind("scroll", function () {
@@ -63,7 +72,7 @@
         }
         var listhtml = "";
         for (var i = 0; i < data.length; i++) {
-            listhtml += '<div class="pdiv">' + (data[i].ImgPath == "" ? "" : '<img src="' + data[i].ImgPath + '" />') + ' <div class="content_text" data-id="' + data[i].FormId + '">' + data[i].Content + '发布时间:' + data[i].ShowPublishDate + ' </div></div>';
+            listhtml += '<div class="pdiv" data="list">' + (data[i].ImgPath == "" ? "" : '<img src="' + data[i].ImgPath + '" />') + ' <div class="content_text" data-id="' + data[i].FormId + '">' + data[i].Content + ' <p class="pdate">发布时间:' + data[i].ShowPublishDate + '</p> </div></div>';
         }
         var reg = /\r|\n/g;
         listhtml = listhtml.replace(reg, "");
@@ -110,8 +119,12 @@
         max-width: 100%;
     }
 
-    .content_text {
+    /*.content_text {
         max-width: 90%;
-        text-align: center;
-    }
+    }*/
+
+        .content_text .pdate {
+            margin: 2px;
+            text-align: right;
+        }
 </style>
