@@ -11,9 +11,10 @@
         var opt = $.extend({}, defaults, options);
         var _this = $(this);
         $(document).delegate(_this.selector, "click", function (e) {
+            var tempcontaindiv = $('<div></div>');//最外层的包裹元素
             var zoomdiv = '<div class="_zoomdiv" style="height:' + document.body.scrollHeight + 'px;width:' + document.body.clientWidth + 'px; position: absolute; top:0px; filter: alpha(opacity=60);background-color: #777;z-index: 100; left: 0px;opacity:0.5; -moz-opacity:0.5; "></div>';
 
-            $(document.body).append(zoomdiv);//生成遮罩层
+            $(tempcontaindiv).append(zoomdiv);//生成遮罩层
 
 
             var temp = $(e.target).closest(_this.selector);//获取需要放大的元素  
@@ -40,7 +41,7 @@
             }
             var winWidth = $(window).width();//窗体宽度
             var scrolltop = $(document).scrollTop();//滚动高度
-            $(bigtemp).css({
+            bigtemp.css({
                 'position': 'absolute',
                 'background-color': 'white',
                 'left': (winWidth - _tempwidth * opt.BigRate) / 2,
@@ -52,13 +53,13 @@
                 'max-width': _tempwidth * opt.BigRate
 
             });//设置元素
-            $(document.body).append(bigtemp);
-
-            $(document).delegate("._zoomdiv", "click", function () {
-                $('._zoomdiv').remove();
-                $(bigtemp).remove();
-                unscrollfree();//释放滚动条
-            });
+            $(tempcontaindiv).append(bigtemp);
+            $(document.body).append(tempcontaindiv);
+            var removefun = function () {
+                tempcontaindiv.remove();
+                unscrollfree(); //释放滚动条
+            };
+            $(document).delegate(tempcontaindiv, "click", removefun);
 
             function scrollfree() {
                 var scrollFunc = function (e) {
